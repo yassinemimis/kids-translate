@@ -1,0 +1,527 @@
+name: firdaws
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.1 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.6
+  flutter_svg: ^2.0.10+1
+  page_flip: ^0.2.3
+  audioplayers: ^5.2.1
+  provider: ^6.1.2
+  flip_card: ^0.6.0
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^3.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+  #   - images/a_dot_burr.jpeg
+      - assets/Google__G__logo.svg
+      - assets/page.jpg
+      - assets/page2.png
+      - assets/fox.png
+      - assets/main_image.png
+      - assets/main_image_right.png
+      - assets/main_image_left.png
+      - assets/page2.png
+      - assets/family.png
+      - assets/JOBS.png
+      - assets/SCHOOL.png
+      - assets/health.png
+      - assets/FOOD.png
+      - assets/GAMES.png
+      - assets/celebrations.png
+      - assets/animals.png
+      - assets/paramette.png
+      - assets/image.png
+      - assets/icon1.png
+      - assets/icon2.png
+      - assets/icon3.png
+      - assets/icon4.png
+      - assets/icon5.png
+      - assets/icon6.png
+      - assets/music/background_music.mp3
+      - assets/background_music.mp3
+      - assets/apple.mp3
+      - assets/bus.mp3
+      - assets/ball.mp3
+      - assets/GRANDMOM.png
+      - assets/31.png
+      - assets/21.png
+      - assets/41.png
+      - assets/12.png
+      - assets/13.png
+      - assets/14.png
+      - assets/15.png
+      - assets/19.png
+      - assets/18.png
+      - assets/17.png
+      - assets/16.png
+      - assets/50.png
+      - assets/51.png
+      - assets/52.png
+      - assets/53.png
+      - assets/54.png
+      - assets/55.png
+      - assets/56.png
+      - assets/63.png
+      - assets/61.png
+      - assets/62.png
+      - assets/64.png
+      - assets/65.png
+      - assets/flip_sound.mp3
+      - assets/Mother’s parents.mp3
+      - assets/Mother’s parentsA.mp3
+      - assets/Grandfather.mp3
+      - assets/GrandfatherA.mp3
+      - assets/Grandmother.mp3
+      - assets/GrandmotherA.mp3
+      - assets/Father.mp3
+      - assets/FatherA.mp3
+      - assets/Mother.mp3
+      - assets/MotherA.mp3
+      - assets/Age.mp3
+      - assets/AgeA.mp3
+      - assets/Algeria.mp3
+      - assets/AlgeriaA.mp3
+      - assets/Algerian.mp3
+      - assets/AlgerianA.mp3
+      - assets/Americanz.mp3
+      - assets/AmericanzA.mp3
+      - assets/Arabic.mp3
+      - assets/ArabicA.mp3
+      - assets/Aunt.mp3
+      - assets/AuntA.mp3
+      - assets/be.mp3
+      - assets/beA.mp3
+      - assets/Britain.mp3
+      - assets/BritainA.mp3
+      - assets/British.mp3
+      - assets/BritishA.mp3
+      - assets/Brother.mp3
+      - assets/BrotherA.mp3
+      - assets/China.mp3
+      - assets/ChinaA.mp3
+      - assets/Chinese.mp3
+      - assets/ChineseA.mp3
+      - assets/ChineseZ.mp3
+      - assets/ChineseZA.mp3
+      - assets/City.mp3
+      - assets/CityA.mp3
+      - assets/Country.mp3
+      - assets/CountryA.mp3
+      - assets/Cousin.mp3
+      - assets/CousinA.mp3
+      - assets/Egypt.mp3
+      - assets/EgyptA.mp3
+      - assets/Egyptian.mp3
+      - assets/EgyptianA.mp3
+      - assets/Eight.mp3
+      - assets/EightA.mp3
+      - assets/Eighteen.mp3
+      - assets/EighteenA.mp3
+      - assets/Eleven.mp3
+      - assets/ElevenA.mp3
+      - assets/English.mp3
+      - assets/EnglishA.mp3
+      - assets/Family.mp3
+      - assets/FamilyA.mp3
+      - assets/Father.mp3
+      - assets/FatherA.mp3
+      - assets/Fifteen.mp3
+      - assets/FifteenA.mp3
+      - assets/Five.mp3
+      - assets/FiveA.mp3
+      - assets/Four.mp3
+      - assets/FourA.mp3
+      - assets/Fourteen.mp3
+      - assets/FourteenA.mp3
+      - assets/Friends.mp3
+      - assets/FriendsA.mp3
+      - assets/From.mp3
+      - assets/FromA.mp3
+      - assets/Glad-to-meet-you.mp3
+      - assets/Glad-to-meet-youA.mp3
+      - assets/Good-afternoon.mp3
+      - assets/Good-afternoonA.mp3
+      - assets/have.mp3
+      - assets/haveA.mp3
+      - assets/He.mp3
+      - assets/HeA.mp3
+      - assets/Hello.mp3
+      - assets/HelloA.mp3
+      - assets/Hi.mp3
+      - assets/HiA.mp3
+      - assets/Home.mp3
+      - assets/HomeA.mp3
+      - assets/How.mp3
+      - assets/HowA.mp3
+      - assets/How-about-you.mp3
+      - assets/How-about-youA.mp3
+      - assets/I.mp3
+      - assets/IA.mp3
+      - assets/It.mp3
+      - assets/ItA.mp3
+      - assets/Language.mp3
+      - assets/LanguageA.mp3
+      - assets/Members.mp3
+      - assets/MembersA.mp3
+      - assets/Name.mp3
+      - assets/NameA.mp3
+      - assets/Nationality.mp3
+      - assets/NationalityA.mp3
+      - assets/Nephew.mp3
+      - assets/NephewA.mp3
+      - assets/Nice-to-meet-you.mp3
+      - assets/Nice-to-meet-youA.mp3
+      - assets/Niece.mp3
+      - assets/NieceA.mp3
+      - assets/Nine.mp3
+      - assets/NineA.mp3
+      - assets/Nineteen.mp3
+      - assets/NineteenA.mp3
+      - assets/One.mp3
+      - assets/OneA.mp3
+      - assets/Seven.mp3
+      - assets/SevenA.mp3
+      - assets/Seventeen.mp3
+      - assets/SeventeenA.mp3
+      - assets/She.mp3
+      - assets/SheA.mp3
+      - assets/Sister.mp3
+      - assets/SisterA.mp3
+      - assets/Six.mp3
+      - assets/SixA.mp3
+      - assets/Sixteen.mp3
+      - assets/SixteenA.mp3
+      - assets/speak.mp3
+      - assets/speakA.mp3
+      - assets/Ten.mp3
+      - assets/TenA.mp3
+      - assets/There.mp3
+      - assets/ThereA.mp3
+      - assets/These.mp3
+      - assets/TheseA.mp3
+      - assets/Thirteen.mp3
+      - assets/ThirteenA.mp3
+      - assets/Thirty.mp3
+      - assets/ThirtyA.mp3
+      - assets/This.mp3
+      - assets/ThisA.mp3
+      - assets/Three.mp3
+      - assets/ThreeA.mp3
+      - assets/To.mp3
+      - assets/ToA.mp3
+      - assets/Twelve.mp3
+      - assets/TwelveA.mp3
+      - assets/Twenty five.mp3
+      - assets/Twenty fiveA.mp3
+      - assets/Twenty.mp3
+      - assets/TwentyA.mp3
+      - assets/Twenty-eight.mp3
+      - assets/Twenty-eightA.mp3
+      - assets/Twenty-four.mp3
+      - assets/Twenty-fourA.mp3
+      - assets/Twenty-nine.mp3
+      - assets/Twenty-nineA.mp3
+      - assets/Twenty-one.mp3
+      - assets/Twenty-oneA.mp3
+      - assets/Twenty-seven.mp3
+      - assets/Twenty-sevenA.mp3
+      - assets/Twenty-six.mp3
+      - assets/MembersA.mp3
+      - assets/Twenty-sixA.mp3
+      - assets/Twenty-three.mp3
+      - assets/Twenty-threeA.mp3
+      - assets/Twenty-two.mp3
+      - assets/Twenty-twoA.mp3
+      - assets/NephewA.mp3
+      - assets/Two.mp3
+      - assets/TwoA.mp3
+      - assets/Uncle.mp3
+      - assets/UncleA.mp3
+      - assets/USA.mp3
+      - assets/USAA.mp3
+      - assets/Welcome.mp3
+      - assets/What.mp3
+      - assets/WhatA.mp3
+      - assets/Where.mp3
+      - assets/WhereA.mp3
+      - assets/Years-old.mp3
+      - assets/Years-oldA.mp3
+      - assets/You.mp3
+      - assets/YouA.mp3
+      - assets/1_right.png
+      - assets/2_left.png
+      - assets/12_right.png
+      - assets/12_left.png
+      - assets/70.png
+      - assets/71.png
+      - assets/72.png
+      - assets/73.png
+      - assets/74.png
+      - assets/75.png
+      - assets/76.png
+      - assets/77.png
+      - assets/78.png
+      - assets/79.png
+      - assets/80.png
+      - assets/81.png
+      - assets/82.png
+      - assets/83.png
+      - assets/84.png
+      - assets/85.png
+      - assets/6_right.png
+      - assets/6_left.png
+      - assets/90.png
+      - assets/91.png
+      - assets/92.png
+      - assets/93.png
+      - assets/94.png
+      - assets/95.png
+      - assets/7_right.png
+      - assets/7_left.png
+      - assets/201.png
+      - assets/203.png
+      - assets/204.png
+      - assets/205.png
+      - assets/206.png
+      - assets/211.png
+      - assets/210.png
+      - assets/209.png
+      - assets/208.png
+      - assets/0.png
+      - assets/214.png
+      - assets/213.png
+      - assets/215.png
+      - assets/216.png
+      - assets/217.png
+      - assets/218.png
+      - assets/219.png
+      - assets/8_right.png
+      - assets/8_left.png
+      - assets/222.png
+      - assets/223.png
+      - assets/224.png
+      - assets/225.png
+      - assets/226.png
+      - assets/227.png
+      - assets/228.png
+      - assets/229.png
+      - assets/230.png
+      - assets/231.png
+      - assets/232.png
+      - assets/233.png
+      - assets/234.png
+      - assets/235.png
+      - assets/236.png
+      - assets/237.png
+      - assets/9_right.png
+      - assets/9_left.png
+      - assets/238.png
+      - assets/239.png
+      - assets/240.png
+      - assets/241.png
+      - assets/242.png
+      - assets/10_right.png
+      - assets/10_left.png
+      - assets/243.png
+      - assets/244.png
+      - assets/245.png
+      - assets/246.png
+      - assets/247.png
+      - assets/248.png
+      - assets/249.png
+      - assets/250.png
+      - assets/251.png
+      - assets/252.png
+      - assets/253.png
+      - assets/300.png
+      - assets/301.png
+      - assets/302.png
+      - assets/303.png
+      - assets/304.png
+      - assets/305.png
+      - assets/306.png
+      - assets/307.png
+      - assets/308.png
+      - assets/309.png
+      - assets/310.png
+      - assets/311.png
+      - assets/86.png
+      - assets/87.png
+      - assets/88.png
+      - assets/89.png
+      - assets/96.png
+      - assets/97.png
+      - assets/-1.png
+      - assets/-12.png
+      - assets/-13.png
+      - assets/-14.png
+      - assets/-15.png
+      - assets/-2.png
+      - assets/-3.png
+      - assets/-4.png
+      - assets/-5.png
+      - assets/-6.png
+      - assets/-7.png
+      - assets/-8.png
+      - assets/-9.png
+      - assets/-10.png
+      - assets/-11.png
+      - assets/-16.png
+      - assets/-17.png
+      - assets/-18.png
+      - assets/-19.png
+      - assets/-20.png
+      - assets/-21.png
+      - assets/-23.png
+      - assets/-24.png
+      - assets/-25.png
+      - assets/-26.png
+      - assets/-27.png
+      - assets/-28.png
+      - assets/-29.png
+      - assets/-22.png
+      - assets/-30.png
+      - assets/-31.png
+      - assets/-32.png
+      - assets/-33.png
+      - assets/-34.png
+      - assets/-35.png
+      - assets/-36.png
+      - assets/-37.png
+      - assets/-38.png
+      - assets/-39.png
+      - assets/-40.png
+      - assets/-41.png
+      - assets/-42.png
+      - assets/-43.png
+      - assets/-44.png
+      - assets/-52.png
+      - assets/-45.png
+      - assets/-46.png
+      - assets/-47.png
+      - assets/-48.png
+      - assets/-49.png
+      - assets/-50.png
+      - assets/-51.png
+      - assets/-52.png
+      - assets/-53.png
+      - assets/-54.png
+      - assets/-55.png
+      - assets/-56.png
+      - assets/-57.png
+      - assets/-58.png
+      - assets/-59.png
+      - assets/-60.png
+      - assets/-61.png
+      - assets/-62.png
+      - assets/312.png
+      - assets/320.png
+      - assets/321.png
+      - assets/322.png
+      - assets/323.png
+      - assets/324.png
+      - assets/325.png
+      - assets/326.png
+      - assets/313.png
+      - assets/327.png
+      - assets/328.png
+      - assets/329.png
+      - assets/330.png
+      - assets/331.png
+      - assets/332.png
+      - assets/333.png
+      - assets/334.png
+      - assets/335.png
+      - assets/314.png
+      - assets/315.png
+      - assets/336.png
+      - assets/337.png
+      - assets/338.png
+      - assets/316.png
+      - assets/339.png
+      - assets/340.png
+      - assets/11_right.png
+      - assets/11_left.png
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: CreepsterCaps
+      fonts:
+        - asset: assets/fonts/Creepster-Regular.ttf
+
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
